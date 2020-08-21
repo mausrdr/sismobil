@@ -1,0 +1,212 @@
+/* 
+    Document   : estilo1
+    Created on : 31/01/2013, 11:33:40
+    Author     : mauro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #e7efd1;
+	color: #395338;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 20px;
+        counter-reset: fieldsets;
+        text-align: center;
+}
+
+form#myform {
+	background: #9cbc2c;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	width: 720px;
+        margin:0 auto;
+        text-align: left;
+        color: #111111;
+}
+
+form#myform fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+form#myform fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+form#myform legend {
+	color: #384313;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #c0d576;
+}
+
+form#myform > fieldset > legend:before {
+    counter-increment: fieldsets;
+    content: "Passo " counter(fieldsets) ": ";
+	
+}
+
+form#myform fieldset fieldset legend {
+	color: #111111;
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+
+form#myform ol li {
+	background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+
+form#myform ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+
+form#myform label {
+	float: left;
+	font-size: 16px;
+	width: 320px;
+}
+
+form#myform fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+
+form#myform fieldset fieldset label:hover {
+	cursor: pointer;
+}
+
+form#myform input:not([type=radio]),
+form#myform textarea {
+	background: #ffffff;
+	border: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	font: italic 16px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+	width: 330px;
+}
+
+form#myform input:not([type=submit]):focus,
+form#myform textarea:focus {
+	background: #eaeaea;
+}
+
+form#myform input[type=radio] {
+	float: left;
+	margin-right: 5px;
+}
+
+form#myform button {
+	background: #384313;
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	color: #ffffff;
+	display: inline;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+}
+
+form#myform button:hover {
+	background: #1e2506;
+	cursor: pointer;
+}
+
+.styled-select select {
+   background: transparent;
+   width: 378px;
+   padding: 5px;
+   font-size: 16px;
+   font: 16px Georgia, "Times New Roman", Times, serif;
+   border: 1px solid #ccc;
+   border-radius: 5px; /*Padrão*/
+   -moz-border-radius: 5px; /*Firefox*/
+   -webkit-border-radius: 5px; /*Web Kit*/
+   height: 34px;
+}
+
+.styled-select {
+   width: 340px;
+   height: 34px;
+   overflow: hidden;
+   background: url(images/new_arrow.jpg) no-repeat right #ddd;
+   border-radius: 5px; /*Padrão*/
+   -moz-border-radius: 5px; /*Firefox*/
+   -webkit-border-radius: 5px; /*Web Kit*/
+}
+
+.regular-checkbox {
+    display: inline-block;
+}
+ 
+.regular-checkbox + label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+ 
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+ 
+.regular-checkbox:checked + label {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+ 
+.regular-checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+
+.error {
+    color: orangered;
+    font-weight: bold;
+}
+
+.centro {
+    text-align: center;
+}

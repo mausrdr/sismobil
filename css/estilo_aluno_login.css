@@ -1,0 +1,306 @@
+/* 
+    Document   : estili_aluno_login
+    Created on : 27/06/2013, 10:21:00
+    Author     : mauro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0; padding: 0;
+	background: #e7efd1  repeat-x;
+	color: #395338;
+	font-family: Georgia, "Times New Roman", Times, serif;
+        counter-reset: fieldsets;
+        text-align: center;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#header {
+	height: auto;
+	width: auto;
+	margin: 0px;
+}
+#header #barra-brasil {
+	position:relative;
+	overflow:hidden;
+	/*min-width:1000px;*/
+	min-width:1000px;
+	height:28px;
+	background: #00500F url("images/barra-brasil-v3-bgx.png") center bottom no-repeat;
+}
+
+#header #barra-brasil .barra {
+        font: 10px normal Arial, Helvetica, sans-serif;
+        text-align: left;
+	display: block;
+	width: 1000px;
+	height:28px;
+	margin: 0 auto;
+	background: url("images/barra-brasil-v3-bgx.gif") 0 bottom repeat-x;
+}
+
+#header #barra-brasil .barra ul {
+	float:right;
+	width: 319px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+
+#header #barra-brasil .barra ul li {
+	float: left;
+	padding-left: 25px;
+	list-style-type: none;
+}
+
+#header #barra-brasil .ai {
+	display: block;
+	width: 161px;
+	height: 28px;
+	text-indent: -1000px;
+	background: #00500F url("images/ai.png") no-repeat 0 4px;
+}
+
+#header #barra-brasil .brasilgov {
+	display: block;
+	width: 108px;
+	height: 28px;
+	text-indent: -1000px;
+	background: #00500F url("images/brasil.png") no-repeat 0 4px;
+}
+#header #banner_governo {
+	background-color: #ffcc00;
+	margin: 0px;
+	padding: 0px;
+	height: 23px;
+	width: auto;
+}
+
+#header #banner_governo .pr {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666666;
+	padding: 0px;
+}
+
+#header #banner_governo #table_top {
+	 border: 0px;
+	 width: 100%;
+}
+
+#header #banner_governo #table_top .left {
+	 width: 33%;
+	 text-align: left;
+}
+
+#header #banner_governo #table_top .center {
+	 width: 34%;
+	 text-align: center;
+}
+
+#header #banner_governo #table_top .right {
+	 width: 33%;
+	 text-align: right;
+}
+#header #banner_instituto {
+	padding: 0px;
+	height: 183px;
+	width: 1000px;
+	background-image: url("images/banner_reitoria.jpg");
+	margin: 0px;
+}
+
+#header #banner_instituto #logo_instituto {
+	padding: 0px;
+	height: 122px;
+	width: 292px;
+	margin-left: 10px;
+	margin-top: 17px;
+	float: left;
+}
+
+#header #banner_instituto #acessibilidade {
+	padding: 0px;
+	height: 31px;
+	width: 114px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 150px;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+form#myform {
+	background: #9cbc2c;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	width: 720px;
+        margin:0 auto;
+        text-align: left;
+        color: #111111;
+}
+
+form#myform fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+
+form#myform fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+form#myform legend {
+	color: #384313;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #c0d576;
+}
+
+form#myform > fieldset > legend:before {
+    counter-increment: fieldsets;
+    content: "Passo " counter(fieldsets) ": ";
+	
+}
+
+form#myform fieldset fieldset legend {
+	color: #111111;
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+
+form#myform ol li {
+	background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+
+form#myform ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+
+form#myform label {
+	float: left;
+	font-size: 16px;
+	width: 320px;
+}
+
+form#myform fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+
+form#myform fieldset fieldset label:hover {
+	cursor: pointer;
+}
+
+form#myform input:not([type=radio]),
+form#myform textarea {
+	background: #ffffff;
+	border: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	font: italic 16px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+	width: 330px;
+}
+
+form#myform input:not([type=submit]):focus,
+form#myform textarea:focus {
+	background: #eaeaea;
+}
+
+form#myform input[type=radio] {
+	float: left;
+	margin-right: 5px;
+}
+
+form#myform input[type="text"],
+form#myform input[type="password"] {
+	
+	background: #eae7e7 url("images/login-sprite.png") no-repeat;
+	
+}
+
+#cpf { background-position: 5px -10px !important; }
+#codigo_acesso { background-position: 5px -60px !important; }
+
+form#myform button {
+	background: #384313;
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	color: #ffffff;
+	display: block;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+}
+
+form#myform button:hover {
+	background: #1e2506;
+	cursor: pointer;
+}
+
+form#myform div a {
+	color: #395338;
+	float: right;
+	font-size: 12px;
+	margin: 30px 15px 0 0;
+        font-weight: bold;
+	text-decoration: underline;
+}
+
+.error {
+    color: orangered;
+    font-weight: bold;
+}
+
+.rodape {
+    
+    font-family:'Arial';
+    font-size:15px;
+    font-weight:normal;
+    font-style:italic;
+    
+}

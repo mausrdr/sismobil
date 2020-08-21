@@ -1,0 +1,187 @@
+/* 
+    Document   : teste_contraste
+    Created on : 13/03/2013, 14:27:32
+    Author     : mauro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* CSS Document */
+body {
+	margin: 0px;
+	background: #e7efd1;
+	padding: 0px;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: #668303;
+}
+
+a:visited {
+	color: #668303;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+img {
+	border: none;
+}
+
+
+/* TEMPLATE CSS */
+
+/********** Container **********/ 
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/********** Header **********/ 
+#header {
+	height: auto;
+	width: auto;
+	margin: 0px;
+}
+
+#header #banner_governo {
+	background-color: #ffcc00;
+	margin: 0px;
+	padding: 0px;
+	height: 23px;
+	width: auto;
+}
+
+#header #banner_governo .pr {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666666;
+	padding: 0px;
+}
+
+#header #banner_governo #table_top {
+	 border: 0px;
+	 width: 100%;
+}
+
+#header #banner_governo #table_top .left {
+	 width: 33%;
+	 text-align: left;
+}
+
+#header #banner_governo #table_top .center {
+	 width: 34%;
+	 text-align: center;
+}
+
+#header #banner_governo #table_top .right {
+	 width: 33%;
+	 text-align: right;
+}
+
+#header #banner_instituto {
+	padding: 0px;
+	height: 183px;
+	width: 1000px;
+	background-image: url(images/banner_reitoria.gif);
+	margin: 0px;
+}
+
+#header #banner_instituto #logo_instituto {
+	padding: 0px;
+	height: 122px;
+	width: 292px;
+	margin-left: 10px;
+	margin-top: 17px;
+	float: left;
+}
+
+#header #banner_instituto #acessibilidade {
+	padding: 0px;
+	height: 31px;
+	width: 114px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 150px;
+}
+ul.topnav {
+    list-style: none;
+    padding: 0 20px;	
+    margin: 0;
+    float: left;
+    width: 960px;
+    background: #222;
+    font-size: 1.2em;
+    background: url(images/topnav_bg.gif) repeat-x;
+}
+ul.topnav li {
+    float: left;
+    margin: 0;	
+    padding: 0 15px 0 0;
+    position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.topnav li a{
+    padding: 10px 5px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+ul.topnav li a:hover{
+    background: url(images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+    width: 17px;
+    height: 35px;
+    float: left;
+    background: url(images/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover { /*--Hover effect for trigger--*/
+    background-position: center bottom;
+    cursor: pointer;
+}
+ul.topnav li ul.subnav {
+    list-style: none;
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+    left: 0; top: 35px;
+    background: #333;
+    margin: 0; padding: 0;
+    display: none;
+    float: left;
+    width: 170px;
+    border: 1px solid #111;
+}
+ul.topnav li ul.subnav li{
+    margin: 0; padding: 0;
+    border-top: 1px solid #252525; /*--Create bevel effect--*/
+    border-bottom: 1px solid #444; /*--Create bevel effect--*/
+    clear: both;
+    width: 170px;
+}
+html ul.topnav li ul.subnav li a {
+    float: left;
+    width: 145px;
+    background: #333 url(images/dropdown_linkbg.gif) no-repeat 10px center;
+    padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+    background: #222 url(images/dropdown_linkbg.gif) no-repeat 10px center; 
+}
